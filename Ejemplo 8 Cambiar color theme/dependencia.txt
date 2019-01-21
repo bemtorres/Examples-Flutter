@@ -1,3 +1,24 @@
 #Agregar en pubspec.yaml
 
  english_words: ^3.1.0
+
+
+
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+
+    //Biblioteca para palabras ramdon
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Example 7 Guardado Favorito",
+      theme: ThemeData(
+        primaryColor: Colors.green, //cambiar color de la aplicación
+
+      ),
+      home: RandomWords(),
+    );
+  }
+}
